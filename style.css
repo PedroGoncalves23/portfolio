@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-}
+ }
 
 
 ::-webkit-scrollbar {
@@ -25,8 +25,8 @@
 body{
     background-color: #34344e;
     background-size: 400%;
-    height: 100vh;
     font-family: 'Lato';
+
 }
 
 .box-img-header{
@@ -198,6 +198,7 @@ strong{
 
 #my-projects-list{
     display: flex;
+    flex-direction: column;
     gap: 2rem;
     align-items: center;
     justify-content: center;
@@ -216,7 +217,7 @@ strong{
 
 
 footer{
-    padding: 4rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -247,6 +248,23 @@ footer > div{
     margin-bottom: 10px;
     height: 500px;
 }
+
+li{
+    color: white;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.a{
+    color: red;
+}
+
+
 
 
 @media only screen and (max-width: 670px) {
