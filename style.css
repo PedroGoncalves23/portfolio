@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #3a415a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #566981;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #89a7b1;
+}
+
+body{
+    background-color: #34344e;
+    background-size: 400%;
+    height: 100vh;
+    font-family: 'Lato';
+}
+
+.box-img-header{
+    height: 100%;
+}
+
+.img-logo{
+    height: 100%;
+    max-height: 60px;
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links:hover{
+    color: #89a7b1;
+    text-decoration: underline;
+    transition: .4s;
+}
+
+.box-btn-actions{
+    display: flex;
+    gap: 1rem;
+}
+
+:is(button,.link-action){
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-action{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-action:hover{
+    background-color:  #566981;
+    border: 1px solid #566981;
+}
+
+.link-action{
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section{
+    padding: 4rem;
+}
+
+.first-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    min-height: 800px;
+
+}
+
+.first-section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+h1{
+    font-size: 4rem;
+    letter-spacing: 8px;
+    color: #fff;
+}
+
+strong{
+    color: #70e3ea;
+}
+
+.first-section p{
+    color: #fff;
+}
+
+.first-section button{
+    width: 200px;
+}
+
+.box-img-main{
+    max-width: 450px;
+    padding: 1rem;
+}
+
+.img-profile{
+    width: 100%;
+    border-radius: 50%;
+}
+
+:is(.second-section, .fourth-section){
+    background-color: #3a415a;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.title{
+    color: #cbdad5;
+}
+
+.second-section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.second-section p{
+    color: #89a7b1;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.second-section p:hover{
+    color: #cbdad5;
+    transition: .4s;
+    cursor: default;
+}
+
+.third-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.third-section > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.third-section > div img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.third-section > div p{
+    max-width: 1000px;
+    color: #fff;
+}
+
+#my-projects-list{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#my-projects-list a{
+    text-decoration: none;
+    color: #566981;
+}
+
+#my-projects-list a:hover{
+    transition: .4s;
+    color: #89a7b1;
+}
+
+
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer > div{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.img-who-am-i{
+    height: 15rem;
+    width: 15px;
+}
+
+.projetos-img1 img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    height: 340px;
+    width: 300px;
+    margin-top: -27px;
+}
+
+.projetos-img  {
+    max-width: 100%;
+    margin-bottom: 10px;
+    height: 500px;
+}
+
+
+@media only screen and (max-width: 670px) {
+    .first-section{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2rem;
+        min-height: 650px;
+        flex-wrap: wrap;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .projetos-img  {
+        margin-bottom: 10px;
+        height: 250px;
+        width: 300px;
+    }
+  }
+
+  
